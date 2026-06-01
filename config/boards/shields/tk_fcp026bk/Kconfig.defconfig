@@ -9,4 +9,10 @@ config ZMK_USB
 config ZMK_BLE
     default y
 
+config I2C
+    default y
+
+config GPIO_MCP230XX
+    default y
+
 endif
