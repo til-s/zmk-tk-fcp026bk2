@@ -39,10 +39,10 @@
         fn_layer {
             bindings = <
 			/* Col:          GPB0              GPB1              GPB2              GPB3              GPB4              GPB5              GPB6              GPB7          */
-			/* Row0  D0   */ &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans          
-			/* Row1  D1   */ &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans          
-			/* Row2  D2   */ &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans          
-			/* Row3  D3   */ &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans          
+			/* Row0  D0   */ &trans            &trans            &trans            &trans            &trans            &trans            &trans            &bt BT_SEL 1         
+			/* Row1  D1   */ &trans            &trans            &trans            &trans            &trans            &trans            &trans            &bt BT_SEL 0          
+			/* Row2  D2   */ &trans            &trans            &trans            &trans            &trans            &trans            &bt BT_CLR_ALL    &bt BT_CLR          
+			/* Row3  D3   */ &trans            &trans            &trans            &trans            &trans            &trans            &trans            &bt BT_SEL 2         
 			/* Row4  D7   */ &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans          
 			/* Row5  D8   */ &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans          
 			/* Row6  D9   */ &trans            &trans            &trans            &kp PG_UP         &trans            &kp HOME          &trans            &trans          
