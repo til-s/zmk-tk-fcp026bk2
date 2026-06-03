@@ -9,18 +9,23 @@ config ZMK_USB
 config ZMK_BLE
     default y
 
+# I2C（MCP23017接続用）
 config I2C
     default y
 
-config GPIO_MCP230XX
+# GPIO expander（MCP23017）
+config GPIO
+    default y
+
+config MCP230XX
     default y
 
 # デバウンス: ポーリング周期(50ms)より大きく設定することで
 # I2Cの一時的な誤読み取りをキー入力として登録しない
 config ZMK_KSCAN_DEBOUNCE_PRESS_MS
-    default 80
+    default 40
 
 config ZMK_KSCAN_DEBOUNCE_RELEASE_MS
-    default 80
+    default 20
 
 endif
