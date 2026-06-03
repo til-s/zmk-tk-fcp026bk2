@@ -59,7 +59,7 @@
          */
         diode-direction = "col2row";
         poll-period-ms = <10>;
-        debounce-press-ms = <10>;
+        debounce-press-ms = <20>;
         debounce-release-ms = <10>;
 
         row-gpios
