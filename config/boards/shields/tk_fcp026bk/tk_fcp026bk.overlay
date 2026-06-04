@@ -60,7 +60,7 @@
         diode-direction = "col2row";
         poll-period-ms = <20>;
         debounce-press-ms = <40>;
-        debounce-release-ms = <20>;
+        debounce-release-ms = <100>;
 
         row-gpios
             = <&gpio0 2  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   /* Row0  D0  P0.02 */
