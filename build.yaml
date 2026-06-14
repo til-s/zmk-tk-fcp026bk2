@@ -1,4 +1,4 @@
 ---
 include:
-  - board: xiao_ble//zmk
+  - board: xiao_ble_zmk//zmk
     shield: tk_fcp026bk
